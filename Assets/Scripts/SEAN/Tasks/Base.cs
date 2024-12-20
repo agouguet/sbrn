@@ -335,7 +335,7 @@ namespace SEAN.Tasks
 
         private bool timeout()
         {
-            if (taskStartTime == 0f) { return false; }
+            // if (taskStartTime == 0f) { return false; }
             if (taskStartTime + timeoutTaskSeconds < Time.time)
             {
                 taskStartTime = 0f;

@@ -105,7 +105,6 @@ namespace SEAN.Scenario.Agents
 
         void Clear()
         {
-            Debug.Log("CLEAR!!!!   " + agentsPool);
             if (!agentsPool) { return; }
             agents = new List<IVI.INavigable>();
             groups = new List<Trajectory.TrackedGroup>();

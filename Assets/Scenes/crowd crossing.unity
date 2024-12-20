@@ -3324,7 +3324,7 @@ MonoBehaviour:
   timeoutTaskSeconds: 120
   displayTimer: 1
   PublishGoal: 1
-  Topic: /move_base_simple/goal
+  Topic: /global_goal
   FrameID: map
   debounceTimeoutSec: 5
   completionDistance: 1.5
@@ -5657,7 +5657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 939754325}
   m_Layer: 0
-  m_Name: square
+  m_Name: crowdcrossing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

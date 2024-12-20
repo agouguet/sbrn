@@ -143,8 +143,13 @@ namespace SEAN.Mapping
                 RotateTextures();
                 UpdateMessages();
                 print(short_map_msg);
-                ros.Publish("/short_map/compressed", short_map_msg);
-                ros.Publish("/tall_map/compressed", tall_map_msg);
+                for (int i = 0; i < 10; i++)
+                {
+                    ros.Publish("/short_map/compressed", short_map_msg);
+                    ros.Publish("/tall_map/compressed", tall_map_msg);
+                    // yield return new WaitForSeconds( 1.0f);
+                }
+                
                 Debug.Log("Done!");
             }
 
